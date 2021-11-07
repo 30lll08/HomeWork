@@ -11,7 +11,7 @@ public class EvenAndOdd {
         int value = 12347778;
         int evenN = even(value);
         int oddN = odd(value);
-        System.out.println("У числа "+ value + " " + evenN + " четных" + " и "+ oddN + " нечетных");
+        System.out.println("У числа " + value + " " + evenN + " четных" + " и " + oddN + " нечетных");
     }
 
     public static int even(int x) {
@@ -20,7 +20,7 @@ public class EvenAndOdd {
             int remainder = x % 10;
             if (remainder % 2 == 0) {
                 i = i + 1;
-               System.out.println(remainder+" ");
+                System.out.println(remainder + " ");
             }
             x = x / 10;
         }
@@ -34,7 +34,7 @@ public class EvenAndOdd {
             int remainder = x % 10;
             if (remainder % 2 != 0) {
                 i = i + 1;
-              System.out.println(remainder+" ");
+                System.out.println(remainder + " ");
             }
             x = x / 10;
         }
