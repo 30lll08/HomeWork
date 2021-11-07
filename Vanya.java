@@ -16,6 +16,7 @@ public class Vanya {
         int researchTime = 38;
         double partForInvest = 0.1;
         int salaryUpPeriod = 6;
+        int salaryUpValue = 400;
 
         double sum = 0;
         double investition = 0;
@@ -25,7 +26,7 @@ public class Vanya {
 
         for (int i = 1; i <= researchTime; i++) {
             if (i == 1 + salaryUpPeriod * n) {
-                salary = salary + 400;
+                salary = salary + salaryUpValue;
                 n = n + 1;
             }
             sum = sum + salary - life - partForInvest * salary;
